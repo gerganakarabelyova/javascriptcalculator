@@ -1,4 +1,4 @@
-# JavaScriptCalculator
+# JavaScript Calculator
 # Used technologies: HTML, CSS, JavaScript
 # Year: 2017
 # Author: Gergana Karabelyova
