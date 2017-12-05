@@ -1,0 +1,87 @@
+body {
+  background: #aec1b9;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#calculator-container {
+    width:500px;
+    height:560px;
+    background: #3baf7b;
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(../images/1.jpg) 10% round; /* for Safari 3.1-5 */
+    -o-border-image: url(../images/1.jpg) 10% round; /* for Opera 11-12.1 */
+    border-image: url(../images/1.jpg) 10% round;
+}
+
+#button-style{
+	border: 0;
+	color: #ffffff;
+	width:70px;
+    height:70px;
+    margin-left:5px;
+    border-radius:4px;
+    border-bottom:2px solid #333;
+    font-size: 30px;
+}
+
+.c{
+	background: #e20909;
+	background-image: url(../images/2.jpg);
+	background-size: cover;  
+}
+
+.normal{
+	background: #033a23;
+}
+
+.operation{
+	background: #232222;
+}
+
+#button-style-operation{
+	border: 0;
+	color: #ffffff;
+	width:70px;
+    height:70px;
+    margin-left:5px;
+    border-radius:4px;
+    border-bottom:2px solid #333;
+    font-size: 30px;
+}
+
+#button-style-equals{
+	border: 0;
+	color: #ffffff;
+	background: #4f7263;
+	width:70px;
+    height:70px;
+    margin-left:5px;
+    border-radius:4px;
+    border-bottom:2px solid #333;
+    font-size: 30px;
+}
+
+#answer-field{
+	display: block;
+    width:380px;
+    height:30px;
+    margin:10px;
+    text-align: right;
+    border:0;
+    padding-top:20px;
+    letter-spacing: 3px;
+    font-size:30px;
+    border-top:2px solid #333;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #e20909;
+   color: white;
+   text-align: center;
+   font-size: 15px;
+}

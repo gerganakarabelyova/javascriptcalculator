@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Calculator</title>
+	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+<center>
+<div id="background">
+<div id="calculator-container">
+ 
+  <form name="calculator" onsubmit="return false;">
+  	  <input type="text" name="answer" id="answer-field" maxlength=19 oninput="checking()" onkeypress="isItEnter()" />
+      <p id="problemWithInputMessage"></p>
+  	  <br />
+
+  	  <input type="button" value=" 1 " onclick="calculator.answer.value += '1'" id="button-style" class="normal" />
+  	  <input type="button" value=" 2 " onclick="calculator.answer.value += '2'" id="button-style" class="normal" />
+  	  <input type="button" value=" 3 " onclick="calculator.answer.value += '3'" id="button-style" class="normal" />
+  	  <input type="button" value=" + " onclick="calculator.answer.value += '+'" id="button-style-operation" class="operation" />
+  	  <br /><br />
+
+  	  <input type="button" value=" 4 " onclick="calculator.answer.value += '4'" id="button-style" class="normal" />
+  	  <input type="button" value=" 5 " onclick="calculator.answer.value += '5'" id="button-style" class="normal" />
+  	  <input type="button" value=" 6 " onclick="calculator.answer.value += '6'" id="button-style" class="normal" />
+  	  <input type="button" value=" - " onclick="calculator.answer.value += '-'" id="button-style-operation" class="operation" />
+  	  <br /><br />
+
+  	  <input type="button" value=" 7 " onclick="calculator.answer.value += '7'" id="button-style" class="normal"/>
+  	  <input type="button" value=" 8 " onclick="calculator.answer.value += '8'" id="button-style" class="normal"/>
+  	  <input type="button" value=" 9 " onclick="calculator.answer.value += '9'" id="button-style" class="normal" />
+  	  <input type="button" value=" x " onclick="calculator.answer.value += '*'" id="button-style-operation" class="operation" />
+  	  <br /><br />
+
+  	  <input type="button" value=" c " onclick="calculator.answer.value = ''" id="button-style-operation" class="c"/>
+  	  <input type="button" value=" 0 " onclick="calculator.answer.value += '0'" id="button-style" class="normal"/>
+  	  <input type="button" value=" = " onclick="equals()" id="button-style-equals" />
+  	  <input type="button" value=" ÷ " onclick="calculator.answer.value += '/'" id="button-style-operation" class="operation" />
+  	  <br /><br />
+
+  	  <input type="button" value="DEL" onclick="deleteSymbol()" id="button-style-operation" class="operation" />
+  	  <input type="button" value="  .  " onclick="calculator.answer.value += '.'" id="button-style-operation" class="operation" />
+  </form>
+</div>
+</div> 
+
+	<div class="footer">
+		Gergana Karabelyova training task for Fork Point 2017
+	</div>
+
+</center>
+</body>
+
+</html>
