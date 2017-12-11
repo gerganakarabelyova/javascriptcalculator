@@ -16,7 +16,7 @@
 <div id="calculator-container">
  
   <form name="calculator" onsubmit="return false;">
-  	  <input type="text" name="answer" id="answer-field" maxlength=19 oninput="checking()" onkeypress="isItEnter()" />
+  	  <input type="text" name="answer" id="answer-field" maxlength=19 oninput="checking()" onkeypress="isItEnter()" readonly />
       <p id="problemWithInputMessage"></p>
   	  <br />
 
@@ -38,7 +38,7 @@
   	  <input type="button" value=" x " onclick="calculator.answer.value += '*'" id="button-style-operation" class="operation" />
   	  <br /><br />
 
-  	  <input type="button" value=" c " onclick="calculator.answer.value = ''" id="button-style-operation" class="c"/>
+  	  <input type="button" value=" c " onclick="clearing()" id="button-style-operation" class="c"/>
   	  <input type="button" value=" 0 " onclick="calculator.answer.value += '0'" id="button-style" class="normal"/>
   	  <input type="button" value=" = " onclick="equals()" id="button-style-equals" />
   	  <input type="button" value=" ÷ " onclick="calculator.answer.value += '/'" id="button-style-operation" class="operation" />
